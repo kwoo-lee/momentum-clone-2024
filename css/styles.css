@@ -1,10 +1,53 @@
 body {
-  background-color: beige;
+  color: white;
+  overflow: hidden;
 }
 
 h1 {
-  color: blue;
+  color: white;
   transition: all 0.5s ease-in-out;
+}
+
+#clock {
+  font-size: 150px;
+  height: 30px;
+}
+
+#greeting {
+  font-size: 70px;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  height: 100vh;
+  width: 99vw;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 10vh;
+  width: 98vw;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+  width: 98vw;
+}
+
+.clock-and-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .clicked {
@@ -13,8 +56,48 @@ h1 {
 
 .sexy-font {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
 }
 
 .hidden {
   display: none;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#quotes span {
+  font-size: 30px;
+}
+
+#todo-form {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  font-size: 30px;
+  width: 55vw;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: beige;
+}
+
+input::placeholder {
+  color: beige;
+}
+
+.super-hot-cute-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
 }

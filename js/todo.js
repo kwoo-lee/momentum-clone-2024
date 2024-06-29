@@ -25,6 +25,7 @@ function paintToDo(todo) {
   todoItem.appendChild(todoSpan);
 
   const todoBtn = document.createElement("button");
+  todoBtn.classList.add("super-hot-cute-button");
   todoBtn.innerText = "❌";
   todoBtn.addEventListener("click", handleDeleteTodo);
   todoItem.appendChild(todoBtn);
